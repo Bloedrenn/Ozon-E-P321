@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header text="Шапка сайта" title="ХЕЛЛО" />
       <p onClick={pClick} onMouseEnter={() => console.log("Навели курсор на p")}>{tempText}</p>
       <h1>Список вещей</h1>
       <ul>
@@ -47,6 +47,7 @@ function App() {
           </li>
         ))}
       </ul>
+      <Header text="МОН" title="ЛУНА" />
     </>
   )
 }
