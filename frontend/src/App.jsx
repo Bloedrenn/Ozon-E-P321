@@ -16,10 +16,11 @@ function App() {
   const [items, setItems] = useState([])
   const [itemsLoading, setItemsLoading] = useState(true)
   const [itemsError, setItemsError] = useState(null)
+  const [tempText, setTempText] = useState("Hello World!")
 
-  const tempText = "Hello World!"
   const pClick = () => { 
     console.log("Нажали на p")
+    setTempText(10)
   }
 
   useEffect(() => {
