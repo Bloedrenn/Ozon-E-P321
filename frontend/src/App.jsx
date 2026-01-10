@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import Header from './components/UI/Header/Header.jsx'
+import Header from './components/UI/Header'
 
 const API_URL = import.meta.env.VITE_API_URL
 
