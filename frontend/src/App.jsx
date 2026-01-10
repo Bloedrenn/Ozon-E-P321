@@ -47,7 +47,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <Header text="МОН" title="ЛУНА" />
+      <Header text="МОН" />
     </>
   )
 }
