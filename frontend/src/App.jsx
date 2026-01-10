@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import Header from '@components/UI/Header'
+import Image from '@components/Image'
+
+import carImgUrl from './images/car.jpg'
 
 const API_URL = import.meta.env.VITE_API_URL
 
@@ -48,6 +51,10 @@ function App() {
         ))}
       </ul>
       <Header text="МОН" />
+
+      {/* <img src='https://assets.avtocod.ru/storage/images/articles-2022/otnyud-ne-bmw-top-10-samykh-dorogikh-mashin-mira-v-2022-godu/otnyud-ne-bmw-top-10-samykh-dorogikh-mashin-mira-v-2022-godu-3-min.jpg' /> */}
+      {/* <img src={carImgUrl} /> */}
+      <Image imageUrl={carImgUrl} />
     </>
   )
 }
