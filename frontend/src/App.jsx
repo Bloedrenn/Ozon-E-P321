@@ -14,6 +14,11 @@ function App() {
   const [itemsLoading, setItemsLoading] = useState(true)
   const [itemsError, setItemsError] = useState(null)
 
+  const tempText = "Hello World!"
+  const pClick = () => { 
+    console.log("Нажали на p")
+  }
+
   useEffect(() => {
     axios.get(`${API_URL}/items`)
       .then(response => {
@@ -33,6 +38,7 @@ function App() {
   return (
     <>
       <Header />
+      <p onClick={pClick} onMouseEnter={() => console.log("Навели курсор на p")}>{tempText}</p>
       <h1>Список вещей</h1>
       <ul>
         {items.map(item => (
